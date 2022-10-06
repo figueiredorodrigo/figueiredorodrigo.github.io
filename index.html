@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Rodrigo Figueiredo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bb9758390d.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="./js/index.js" defer></script>
+    <!-- EmailJS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript"> (function(){
+        emailjs.init("6d9Px-webmRS_t0yW");
+    })(); 
+    </script>
+</head>
+<body>
+    <div class="total">    
+        <nav class="navbar">
+            <div class="content">
+            <div class="logo">
+                <a href="#" class="portfolio">
+                <ul>
+                    <li>P</li>
+                    <li>o</li>
+                    <li>r</li>
+                    <li>t</li>
+                    <li>f</li>
+                    <li>ó</li>
+                    <li>l</li>
+                    <li>i</li>
+                    <li>o</li>
+                </ul>
+                </a>
+            </div>
+            <ul class="menu-list internal-link">
+                <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#banner"><i class="fa-solid fa-house menu-icon"></i>Home</a></li>
+                <li><a href="#about"><i class="fa-regular fa-address-card menu-icon"></i>Sobre</a></li>
+                <li><a href="#habilities"><i class="fa-solid fa-book menu-icon"></i>Habilidades</a></li>
+                <li><a href="#project"><i class="fa-solid fa-diagram-project menu-icon"></i>Projetos</a></li>
+                <li><a href="#depoimento"><i class="fa-solid fa-comment menu-icon"></i>Depoimentos</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope menu-icon"></i>Contato</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            </div>
+        </nav>
+
+        <!-- banner -->
+        <section class="banner" id="banner">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="img/user (1).jpg" alt="">
+                </div>
+            
+                <h3>Rodrigo Figueiredo</h3>
+                <p>Front End Web Developer.</p>
+                <a href="cv/index.html" class="btn">Curriculum</a>
+                <ul class="socialMedia">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Sobre -->
+        <section class="about adjust" id="about">
+            <div class="title">
+                <h2>Sobre mim</h2>
+            </div>
+            <div class="content" data-top-top="opacity: 1;" data-top-bottom="opacity: 0;">
+                <div class="textBox" >
+                    <p>Sou tecnólogo em Sistema de informação e formado em Administração. Nos inícios dos anos 2000, tinha como hobby criar páginas no Frontpage e Dreamweaver, criar flyers para festas e esse hobby, hoje, virou minha paixão. Estou estudando as diversas ferramentas de desenvolvimento web, buscando ingressar no mercado. Sou motivado, focado, organizado e objetivo, sempre tentando aprimorar essas habilidades. </p>
+                </div>
+                <div class="imgBx">
+                    <img src="img/bg1.jpg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilities adjust" id="habilities"  data-bottom-top="opacity: 0;" data-0-bottom="opacity: 1;">
+            <div class="title">
+                <h2>Habilidades</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis excepturi aut temporibus.</p>
+            </div>
+            <div class="content">
+                <div class="habilitiesBox">
+                    <img src="./img/css.png">
+                    <h2>CSS</h2>
+                    <p>Curso do Prof. Guanabara e Origamid.</p>
+
+                </div>
+                <div class="habilitiesBox">
+                    <img src="./img/javascript.svg">
+                    <h2>Javascript</h2>
+                    <p>Curso Origamid</p>
+                </div>
+                <div class="habilitiesBox">
+                    <img src="./img/git.svg">
+                    <h2>Git</h2>
+                    <p>Curso Sujeito Programador(Udemy).</p>
+                </div>
+                <div class="habilitiesBox">
+                    <img src="./img/mysql.png">
+                    <h2>MySQL</h2>
+                    <p>Estudando no momento.</p>
+                </div>
+                <div class="habilitiesBox">
+                    <img src="./img/python.png">
+                    <h2>Python</h2>
+                    <p>Curso do Prof. Guanabara.</p>
+                </div>
+                <div class="habilitiesBox">
+                    <img src="./img/react.png">
+                    <h2>React</h2>
+                    <p>Estudando no momento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="project adjust" id="project">
+            <div class="title">
+                <h2>Projetos de estudo</h2>
+                <p>Alguns projetos pessoais de estudo. No gif, contém um breve resumo da tecnologia usada e link para o projeto.</p>
+            </div>
+            <div class="content">
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/calculadora1.gif">
+                    </div>
+                    <div class="textBx">
+                        <h3>Calculadora simples para contas.</br> Tecnologia: Html, CSS e JS</h3>
+                        <a href="/figueiredorodrigo.github.io/projects/calculadora-portfolio/index.html" target="_blank"><button class="btnProject left">Demo</button></a>
+                        <a href="#"><button class="btnProject right">Github</button></a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/imc.gif">
+                    </div>
+                    <div class="textBx">
+                        <h3>Calculadora IMC para peso corporal</br> Tecnologia: Html, CSS e JS</h3>
+                        <a href="/figueiredorodrigo.github.io/projects/imc/index.html" target="_blank"><button class="btnProject left">Demo</button></a>
+                        <a href="#"><button class="btnProject right">Github</button></a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/memoria.gif">
+                    </div>
+                    <div class="textBx">
+                        <h3>Jogo da memória</br> 
+                        Tecnologia: Html, CSS e JS</h3>
+                        <a href="/figueiredorodrigo.github.io/projects/jogoMemoria/index.html" target="_blank"><button class="btnProject left">Demo</button></a>
+                        <a href="#"><button class="btnProject right">Github</button></a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/tictac.gif">
+                    </div>
+                    <div class="textBx">
+                        <h3>Jogo da velha</br>
+                        </br>Tecnologia: Html, CSS e JS</h3>
+                        <a href="/figueiredorodrigo.github.io/projects/jogoDaVelha/index.html" target="_blank"><button class="btnProject left">Demo</button></a>
+                        <a href="#"><button class="btnProject right">Github</button></a>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/img5.jpg">
+                    </div>
+                    <div class="textBx">
+                        <h3>Project 05</h3>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/img6.jpg">
+                    </div>
+                    <div class="textBx">
+                        <h3>Project 06</h3>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/img7.jpg">
+                    </div>
+                    <div class="textBx">
+                        <h3>Project 07</h3>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/img8.jpg">
+                    </div>
+                    <div class="textBx">
+                        <h3>Project 08</h3>
+                    </div>
+                </div>
+                <div class="workBx">
+                    <div class="imgBx">
+                        <img src="./img/img9.jpg">
+                    </div>
+                    <div class="textBx">
+                        <h3>Project 09</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- depoimentos-->
+        <section class="depoimento adjust" id="depoimento" data-center-top="opacity: 0;" data-0-bottom="opacity: 1;">
+            <div class="title">
+                <h2>Depoimentos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis excepturi aut temporibus.</p>
+            </div>
+            <div class="content">
+                <div class="depoimentoBox">
+                    <div class="imgBx">
+                        <img src="./img/user3.jpg">
+                    </div>
+                    <p>EM CONSTRUÇÃO.</p>
+                    <h4>Company: <br><span>Website Designer</span></h4>
+                </div>
+                <div class="depoimentoBox">
+                    <div class="imgBx">
+                        <img src="./img/user2.jpg">
+                    </div>
+                    <p>EM CONSTRUÇÃO.</p>
+                    <h4>Company:<br><span>Website Designer</span></h4>
+                </div>
+                <div class="depoimentoBox">
+                    <div class="imgBx">
+                        <img src="./img/user1.jpg">
+                    </div>
+                    <p>EM CONSTRUÇÃO.</p>
+                    <h4>Company:<br><span>Website Designer</span></h4>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section class="contact adjust" id="contact" data-center-top="opacity: 0;" data-0-bottom="opacity: 1;">
+            <div class="title">
+                <h2>Me manda um e-mail</h2>
+                <p>Será um prazer te responder.</p>
+            </div>
+            <div class="contactForm">
+                <div class="row">
+                    <input type="text" name="" placeholder="Primeiro nome" class="nome" required>
+                    <input type="text" name="" placeholder="Segundo nome">
+                </div>
+                <div class="row">
+                    <input type="email" name="" placeholder="E-mail" class="email">
+                    <input type="number" name="" placeholder="Celular" class="cel">
+                </div>
+                <div class="row2 tron-button">
+                    <textarea placeholder="Mensagem" class="message"></textarea>
+                </div>
+                <div class="row2">
+                    <input type="submit" value="Enviar" class="buttonContact" onclick="sendMail()">
+                        <span class="buttonContact__left-line"></span>
+                        <span class="buttonContact__top-line"></span>
+                        <span class="buttonContact__right-line"></span>
+                        <span class="buttonContact__bottom-line"></span> 
+                    </input>    
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Todos os direitos reservados, Rodrigo Figueiredo® 2022 ©.</p>
+        </div>
+
+        <!-- Go to top-->
+        <div class="smoothscroll-top">
+            <span class="scroll-top-inner"></span>
+        </div>    
+    </div>    
+</body>
+</html>
