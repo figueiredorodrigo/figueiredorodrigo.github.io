@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>Todo List APP</header>
+        <div class="content">
+            <input type="text" id="input" placeholder="Adicionar nova tarefa">
+            <button class="addBtn">Add</button>
+        </div>
+        <ul class="todoList">
+
+        </ul>
+        <div class="footer">
+            <span>Você tem <span class="taskPendente"></span> <span class="plural"> tarefa pendente</span> 
+            <button class="clean">Limpar tudo</button>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+    <div class="modal-container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Editar</h2>
+                <ion-icon name="close-circle-outline" class="closeModal"></ion-icon>
+            </div>
+            <div class="modal-task">
+                <input type="text" name="modalinput" id="modalinput">
+                <button class="modalBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

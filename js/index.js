@@ -48,7 +48,7 @@ function scroolSmooth() {
     internalLinks.forEach((link) => {
         link.addEventListener('click', scroolToSection)
     });
-}
+};
 
 scroolSmooth();
 
@@ -73,13 +73,18 @@ if(buttonTop) {
         })
     
     })
-}
+};
 
 scroolTop()
 }   
 
 // EmailJS // 
 function sendMail() {
+    let btnContact = document.querySelector('.buttonContact');
+    btnContact.setAttribute('disable', '')
+    setTimeout(() => {
+        btnContact.removeAttribute('disabled') 
+    },3000);
     let email = document.querySelector('.email');
     if(email.value != '' && email.value.includes('@')) {
         let params = {
@@ -99,9 +104,9 @@ function sendMail() {
                 document.querySelector('.email').value = "";
                 document.querySelector('.cel').value = "";
                 document.querySelector('.message').value = "";
-                alert("Sua mensagem foi enviada com sucesso")
+                alert("Sua mensagem foi enviada com sucesso");
             })
-            .catch((err) => alert("Ocorreu um erro no envio, estamos trabalhando para corrigir o mais breve possível."))
+            .catch((err) => alert("Ocorreu um erro no envio, estamos trabalhando para corrigir o mais breve possível."));
     } else {
         let warning = document.querySelector('.email');
         warning.placeholder = 'Digite um e-mail válido';
@@ -111,4 +116,4 @@ function sendMail() {
             warning.style.border = "";   
         },3000);
     }
-}
+};

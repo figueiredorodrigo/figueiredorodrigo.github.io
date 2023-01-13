@@ -3,16 +3,16 @@ const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
 
 const characters = [
-    'beth',
-    'jerry',
-    'jessica',
-    'morty',
-    'pessoa-passaro',
-    'pickle-rick',
-    'rick',
-    'summer',
-    'meeseeks',
-    'scroopy',
+    'abu',
+    'lisa',
+    'meggie',
+    'homer',
+    'bart',
+    'margie',
+    'krusty',
+    'flanders',
+    'burns',
+    'milhouse',
 ];
 
 let firstCard = '';
@@ -23,7 +23,10 @@ const checkEndGame = () => {
 
     if (disabledCards.length === 20) {
         clearInterval(this.loop);
-        alert(`Parabens ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML} segundos!`)
+        alert(`Parabens ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML} segundos!`);
+        if(confirm('Você quer jogar de novo?') == true) {
+            location.reload();
+        }
     }
 }
 
